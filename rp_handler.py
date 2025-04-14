@@ -350,7 +350,7 @@ def handler(job: Dict[str, Any]) -> Dict[str, Any]:
 
 
 if __name__ == '__main__':
-    wait_for_service(f'{BASE_URI}/sdapi/v1/sd-models')
+    # wait_for_service(f'{BASE_URI}/sdapi/v1/sd-models')
     logger.info('A1111 Stable Diffusion API is ready')
     logger.info('Starting RunPod Serverless...')
     runpod.serverless.start({
